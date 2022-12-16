@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostmount
+spec:
+  containers:
+  - name: shell
+    image: linuxserver/openssh-server@sha256:14b87b54649dcee60a173a6a73a4c72e9eb9f9056ce9072812a6248f23d4d715
+    command:
+      - "bin/bash"
+      - "-c"
+      - "sleep 10000"
+    volumeMounts:
+      - name: root
+        mountPath: /opt/root
+  volumes:
+  - name: root
+    hostPath:
+      path: /
+      type: Directory

@@ -1,0 +1,12 @@
+#! /bin/bash
+echo "Enter IP Address:"
+read TARGET_IP
+curl $TARGET_IP:42 -m 1
+sleep 1
+curl $TARGET_IP:1337 -m 1
+sleep 1
+curl $TARGET_IP:10420 -m 1
+sleep 1
+curl $TARGET_IP:6969 -m 1
+sleep 1
+curl $TARGET_IP:63000 -m 1

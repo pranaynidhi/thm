@@ -1,0 +1,3 @@
+#!/bin/sh
+
+kali-treecd "/usr/share/windows-resources/mimikatz" "mimikatz" 2 false

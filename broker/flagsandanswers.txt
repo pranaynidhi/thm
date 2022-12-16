@@ -1,0 +1,6 @@
+Ports between 1000 and 10000: 1883, 8161
+Name of Software: ActiveMQ
+Name of Video Game: Hacknet
+flag.txt: THM{you_got_a_m3ss4ge}
+root.txt: THM{br34k_br0k3_br0k3r}
+
